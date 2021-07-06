@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border: 3px solid #73AD21;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 60px;
+  right:0;
+  left: 0;
+  width: 150px;
+  height: 235px;
+  border: 3px solid #73AD21;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+
+<div class="relative" id="rel">
+    <h2>Ditto</h2>
+    <button class="btn">i</button>
+  <div class="absolute" id="abs"></div>
+</div>
+<script>
+    document.getElementById("rel").style= "background: linear-gradient(#e66465, #9198e5);";
+    document.getElementById("abs").style = "";
+</script>
+
+</body>
+</html>
