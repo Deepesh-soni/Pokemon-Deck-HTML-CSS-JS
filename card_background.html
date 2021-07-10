@@ -131,7 +131,7 @@
         .card-body {
 
             position: absolute;
-            height: 20rem;
+            height: 24rem;
             width: 15rem;
             margin: 16px 32px;
             border-radius: 1rem;
@@ -149,11 +149,21 @@
 
         }
 
+        .image-container{
+            overflow: hidden;
+        }
+
         .image-container img {
             position: absolute;
             top: -87px;
             left: -9px;
             width: 90%;
+            transition: all 1s ease;
+
+        }
+
+        .image-container img:hover{
+            transform: scale(1.11);
         }
 
         .content-container {
@@ -164,11 +174,13 @@
         }
 
         h3 {
-            font-family: 'Tourney', cursive;
+            font-family: 'Arvo', serif;
+            color: #272C46;
         }
 
         p {
-            font-family: 'Merriweather', serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #272C46;
         }
 
         /* *****************button****************** */
@@ -208,23 +220,13 @@
             /* border: 1px solid #A2ADBC; */
             margin: 0px;
             display: block;
-            /*change here
-            /* -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1); */
         }
-
-        /* .container {
-            box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
-            border: 1px solid #A2ADBC;
-            max-width: 15rem;
-            max-height: 10rem;
-        } */
     </style>
 </head>
 
 <body>
     <div class="card-body">
         <div class="i-button">
-            <!-- <button type="button">i</button> -->
             <input type="button" value="i" id="info">
             <div id="pop" class="container">
 
@@ -303,8 +305,6 @@
                 </div>
             </article>
         </div>
-
-
     </div>
 
     <script>
