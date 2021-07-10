@@ -223,3 +223,12 @@ body{
   margin: 30px;
   float: right;
 }
+
+
+button{
+  padding-left: 11px;
+  padding-right: 10px;
+  margin-left: 190px;
+  border: solid 2px black;
+  border-radius: 65px;
+}
