@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        How to design Responsive card-deck
+        with fixed width in Bootstrap ?
+    </title>
+
+    <!-- bootstrap linked-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* body {
+            font-family: Arial;
+            margin: 0 auto;
+            max-width: 800px;
+            max-height: 400px;
+            padding: 20px;
+        } */
+
+        /* .heading {
+            font-size: 25px;
+            margin-right: 25px;
+        } */
+
+        /* .fa {
+            font-size: 25px;
+        } */
+
+        /* .checked {
+            color: orange;
+        } */
+
+        /* Three column layout */
+        .side {
+            float: left;
+            width: 15%;
+            /* margin-top: 10px; */
+        }
+
+        .middle {
+            margin-top: 10px;
+            float: left;
+            width: 60%;
+        }
+
+        /* Place text to the right */
+        .right {
+            text-align: right;
+        }
+
+        /* Clear floats after the columns */
+        .row {
+            margin: 0% 5px;
+        }
+
+        /* .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+        /* The bar container */
+        .bar-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+
+        }
+
+        /* Individual bars */
+        .bar-5 {
+            width: 60%;
+            height: 5px;
+            background-color: #04AA6D;
+            /* max-height: 5px; */
+        }
+
+        .bar-4 {
+            width: 30%;
+            height: 5px;
+            background-color: #2196F3;
+        }
+
+        .bar-3 {
+            width: 10%;
+            height: 5px;
+            background-color: #00bcd4;
+        }
+
+        .bar-2 {
+            width: 4%;
+            height: 5px;
+            background-color: #ff9800;
+        }
+
+        .bar-1 {
+            width: 15%;
+            height: 5px;
+            background-color: #f44336;
+        }
+
+        .small {
+            font-size: 10px;
+        }
+
+        /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+        @media (max-width: 400px) {
+
+            .side,
+            .middle {
+                width: 100%;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Card design with bootstrap class mx-auto
+		for making it centered in the div-->
+    <div class="card mx-auto" style="width:15rem; height:10rem; background-color: #b7f0db;">
+
+        <!-- <div class="progress" style="height:3px">
+            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                style="width: 20%;height:10px;">
+            </div>
+        </div>
+        <br/>
+        <div class="progress" style="height:5px">
+            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                style="width: 100%;height:10px;">
+            </div>
+        </div>
+        <div class="progress" style="height:5px">
+            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                style="width: 100%;height:10px;">
+            </div>
+        </div>
+        <div class="progress" style="height:5px">
+            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                style="width: 100%;height:10px;">
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="side">
+                <div class="label small">Mega Punch</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-5"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div class="label small">150</div>
+            </div>
+            <div class="side">
+                <div class="label small">Double Slap</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-4"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div class="label small">63</div>
+            </div>
+            <div class="side">
+                <div class="label small">Fire Punch</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div class="label small">15</div>
+            </div>
+            <div class="side">
+                <div class="label small">Ice Punch</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-2"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div class="label small">6</div>
+            </div>
+            <div class="side">
+                <div class="label small">Thunder Punch</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-1"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div class="label small">20</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
