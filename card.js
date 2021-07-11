@@ -30,3 +30,33 @@ innerCard_image_container.appendChild(image_contrainer_img);
 var contentContainer=document.createElement('div');
 contentContainer.className="content-container";
 innerCard_article.appendChild(contentContainer);
+
+
+var pokemonName=document.createElement('div');
+pokemonName.className="pokemon-name";
+pokemonName.innerHTML='Ditto';
+
+contentContainer.appendChild(pokemonName);
+
+// *************************button*************
+var infoButton=document.createElement('div');
+infoButton.className='i-button';
+main_card_body.appendChild(infoButton);
+
+
+var infoButton_input=document.createElement('input');
+infoButton_input.id='info';
+infoButton_input.value="i";
+infoButton_input.type="button";
+infoButton.appendChild(infoButton_input);
+
+// **************popup-conatiner**************
+var popupContainer=document.createElement('div');
+popupContainer.className='popup-container';
+infoButton.appendChild(popupContainer);
+
+
+
+
+
+
