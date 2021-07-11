@@ -1,0 +1,207 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* body {
+            font-family: Arial;
+            margin: 0 auto;
+            max-width: 800px;
+            max-height: 400px;
+            padding: 20px;
+        } */
+
+        /* .heading {
+            font-size: 25px;
+            margin-right: 25px;
+        } */
+
+        /* .fa {
+            font-size: 25px;
+        } */
+
+        /* .checked {
+            color: orange;
+        } */
+
+        /* Three column layout */
+        .side {
+            float: left;
+            width: 15%;
+            /* margin-top: 10px; */
+        }
+
+        .middle {
+            margin-top: 10px;
+            float: left;
+            width: 60%;
+        }
+
+        /* Place text to the right */
+        .right {
+            text-align: right;
+        }
+
+        /* Clear floats after the columns */
+        .row {
+            margin: 0% 5px;
+        }
+
+        /* .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+        /* The bar container */
+        .bar-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+
+        }
+
+        /* Individual bars */
+        .bar-5 {
+            width: 60%;
+            height: 5px;
+            background-color: #04AA6D;
+            /* max-height: 5px; */
+        }
+
+        .bar-4 {
+            width: 30%;
+            height: 5px;
+            background-color: #2196F3;
+        }
+
+        .bar-3 {
+            width: 10%;
+            height: 5px;
+            background-color: #00bcd4;
+        }
+
+        .bar-2 {
+            width: 4%;
+            height: 5px;
+            background-color: #ff9800;
+        }
+
+        .bar-1 {
+            width: 15%;
+            height: 5px;
+            background-color: #f44336;
+        }
+
+        .small {
+            font-size: 10px;
+        }
+
+        /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+        @media (max-width: 400px) {
+
+            .side,
+            .middle {
+                width: 100%;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        /* ********************card**************** */
+        .card-body {
+
+            position: absolute;
+            height: 24rem;
+            width: 15rem;
+            margin: 16px 32px;
+            border-radius: 1rem;
+            background-image: linear-gradient(#1A2741, #D46683, #F8D8C9);
+        }
+
+        .inner-card-body {
+            position: relative;
+            height: 12rem;
+            width: 12rem;
+            margin: 30% auto;
+            border-radius: 1rem;
+            background-color: white;
+            opacity: 0.95;
+
+        }
+
+        .image-container{
+            overflow: hidden;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: -87px;
+            left: -9px;
+            width: 90%;
+            transition: all 1s ease;
+
+        }
+
+        .image-container img:hover{
+            transform: scale(1.11);
+        }
+
+        .content-container {
+            position: relative;
+            top: 108px;
+            left: 69px;
+            width: 103%;
+        }
+
+        h1 {
+            font-family: 'Arvo', serif;
+            color: #272C46;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #272C46;
+        }
+
+        /* *****************button****************** */
+        .i-button {
+            position: absolute;
+            top: 16px;
+            left: 219px;
+            width: 90%;
+        }
+
+        .i-button input {
+            width: 27px;
+            height: 27px;
+            border-radius: 40px;
+            border: white 2px solid;
+            color: white;
+            background-color: rgba(216, 191, 216, 0);
+            margin-left: 21px;
+            margin-top: -13px;
+        }
+
+        .i-button :hover {
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            border: white 2px solid;
+            color: white;
+            background-color: rgba(216, 191, 216, 0);
+        }
+
+        /* *****************i-button******************** */
+        #pop {
+            position: absolute;
+            z-index: 99999;
+            padding: 0px;
+            background: #fdfdfd;
+            /* border: 1px solid #A2ADBC; */
+            margin: 0px;
+            display: block;
+        }
